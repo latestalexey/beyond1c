@@ -207,3 +207,21 @@ while i < 10:
     i += 1
 ```
 
+## Создание структуры
+
+1C:
+```bsl
+Сотрудник = Новый Структура("Имя, Возраст", "Катя", 19);
+Сообщить(Сотрудник.Имя);
+```
+
+python:
+```python
+class Employee:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+employee = Employee("Катя", 19)
+print(employee.name)
+```
