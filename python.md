@@ -128,3 +128,20 @@ python:
 for key, value in age.items():
     print(key + ": " + str(value))
 ```
+
+# Обращение к соответствию по ключу
+
+1C:
+```bsl
+ВозрастКати = Возвраст["Катя"];
+Если ВозрастКати <> Неопределено Тогда
+    Сообщить(ВозрастКати);
+КонецЕсли;
+```
+
+python:
+```python
+kate_age = age.get("Катя")
+if kate_age is not None:
+    print(kate_age)
+```
