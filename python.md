@@ -79,6 +79,21 @@ def amount(price, quantity=1):
     return price * quantity
 ```
 
+## Вызов функции
+
+1C:
+```bsl
+Сумма = Сумма(10)
+```
+
+python:
+```python
+x = amount(10) # если присвоим в amount, то затрем функцию
+
+# альтернативный вариант
+x = amount(price=10)
+```
+
 ## Создание массива
 
 1C:
