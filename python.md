@@ -41,6 +41,7 @@ def test():
 Сумма = 0;
 ```
 
+python:
 ```python
 quantity = 5
 amount = 0
