@@ -66,3 +66,19 @@ python
 def amount(price, quantity=1):
     return price * quantity
 ```
+
+# Создание массива
+
+1C:
+```bsl
+Имена = Новый Массив;
+Имена.Добавить("Саша");
+Имена.Добавить("Маша");
+```
+
+python:
+```python
+names = []
+names.append("Саша")
+names.append("Маша")
+```
