@@ -225,3 +225,17 @@ class Employee:
 employee = Employee("Катя", 19)
 print(employee.name)
 ```
+
+## Добавление поля в структуру
+
+1C:
+```bsl
+Сотрудник.Вставить("Пол", "Мужской");
+Сообщить(Сотрудник.Пол);
+```
+
+python:
+```python
+employee.gender = "male"
+print(employee.gender)
+```
