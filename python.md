@@ -141,7 +141,22 @@ for key, value in age.items():
 
 python:
 ```python
-kate_age = age.get("Катя")
+kate_age = age.get("Катя") # обращение через квадратные скобки выдаст ошибку если ключа нет
 if kate_age is not None:
     print(kate_age)
+```
+
+# Проверка наличия ключа в соответствии
+
+1C:
+```bsl
+Если Возраст["Катя"] <> Неопределено Тогда
+    Сообщить(Возраст["Катя"]);
+КонецЕсли;
+```
+
+python:
+```python
+if "Катя" in age:
+    print(age["Катя"])
 ```
