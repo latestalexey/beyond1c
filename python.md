@@ -282,3 +282,15 @@ python:
 ```python
 print("\n".join(names))
 ```
+
+## Тернарный оператор
+
+1C:
+```bsl
+Сумма = Цена * ?(Количество > 0, Количество, 1);
+```
+
+python:
+```python
+amount = price * (quantity if quantity > 0 else 1)
+```
