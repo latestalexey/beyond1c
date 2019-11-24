@@ -51,3 +51,18 @@ def test():
     global amount # это указание что мы хотим изменить глобальную переменную
     amount = price * quantity
 ```
+
+# Объявление функции
+
+1C:
+```bsl
+Функция Сумма(Цена, Количество = 1)
+    Возврат Цена * Количество;
+КонецФункции
+```
+
+python
+```python
+def amount(price, quantity=1):
+    return price * quantity
+```
