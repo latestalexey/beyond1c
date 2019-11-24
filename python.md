@@ -93,6 +93,12 @@ python:
 names = []
 names.append("Саша")
 names.append("Маша")
+
+# альтернативный вариант:
+names = [
+    "Саша",
+    "Маша",
+]
 ```
 
 ## Цикл по массиву
@@ -139,6 +145,12 @@ python:
 age = {}
 age["Саша"] = 18
 age["Маша"] = 19
+
+# альтернативный вариант:
+age = {
+    "Саша": 18,
+    "Маша": 19,
+}
 ```
 
 ## Цикл по соответствию
@@ -154,6 +166,14 @@ python:
 ```python
 for key, value in age.items():
     print(key + ": " + str(value))
+
+# альтернативный вариант:
+for item in age.items():
+    print(item[0] + ": " + str(item[1]))
+
+# альтернативный вариант:
+for key in age:
+    print(key + ": " + str(age[key]))
 ```
 
 ## Обращение к соответствию по ключу
@@ -239,6 +259,17 @@ class Employee:
 
 employee = Employee("Катя", 19)
 print(employee.name)
+
+# альтернативный вариант:
+from dataclasses import dataclass
+
+@dataclass
+class Employee:
+	name: str
+	age: int
+
+employee = Employee("Катя", 19)
+print(employee.name)
 ```
 
 ## Добавление поля в структуру
@@ -293,4 +324,7 @@ print("\n".join(names))
 python:
 ```python
 amount = price * (quantity if quantity > 0 else 1)
+
+# альтернативный вариант:
+amount = price * (quantity > 0 and quantity or 1)
 ```
