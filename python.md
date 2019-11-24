@@ -254,3 +254,19 @@ python:
 employee.gender = "male"
 print(employee.gender)
 ```
+
+## Форматирование строк (шаблоны, интерполяция)
+
+1C:
+```bsl
+Имя = "Катя";
+Возраст = 19;
+Сообщить(СтрШаблон("%1: %2", Имя, Возраст));
+```
+
+python:
+```python
+name = "Kate"
+age = 19
+print(f"{name}: {age}")
+```
