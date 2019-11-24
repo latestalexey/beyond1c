@@ -73,7 +73,7 @@ def test():
 КонецФункции
 ```
 
-python
+python:
 ```python
 def amount(price, quantity=1):
     return price * quantity
@@ -187,3 +187,23 @@ python:
 for i in range(1, 11):
     print(i)
 ```
+
+## Цикл с условием
+
+1C:
+```bsl
+Индекс = 0;
+Пока Индекс < 10 Цикл
+    Сообщить(Индекс);
+    Индекс = Индекс + 1;
+КонецЦикла;
+```
+
+python:
+```python
+i = 0
+while i < 10:
+    print(i)
+    i += 1
+```
+
