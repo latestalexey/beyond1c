@@ -82,3 +82,18 @@ names = []
 names.append("Саша")
 names.append("Маша")
 ```
+
+# Цикл по массиву
+
+1C:
+```bsl
+Для Каждого Имя Из Имена Цикл
+    Сообщить(Имя);
+КонецЦикла;
+```
+
+python:
+```python
+for name in names:
+    print(name)
+```
