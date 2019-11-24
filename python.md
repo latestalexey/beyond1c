@@ -68,7 +68,7 @@ def test():
 
 1C:
 ```bsl
-Функция Сумма(Цена, Количество = 1)
+Функция Сумма(Знач Цена, Знач Количество = 1)
     Возврат Цена * Количество;
 КонецФункции
 ```
@@ -265,8 +265,8 @@ from dataclasses import dataclass
 
 @dataclass
 class Employee:
-	name: str
-	age: int
+    name: str
+    age: int
 
 employee = Employee("Катя", 19)
 print(employee.name)
