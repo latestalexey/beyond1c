@@ -159,8 +159,8 @@ if "Катя" in names:
 python:
 ```python
 if "Катя" in names:
-	index = names.index("Катя") # вызовет ошибку если значения нет в массиве
-	print(index)
+    index = names.index("Катя") # вызовет ошибку если значения нет в массиве
+    print(index)
 ```
 
 ## Создание соответствия
@@ -377,17 +377,17 @@ amount = price * (quantity > 0 and quantity or 1)
 python:
 ```python
 if x == 0 or x is None:
-	print('пусто')
+    print('пусто')
 elif 0 < x and x < 10:
-	print('от 1 до 9')
+    print('от 1 до 9')
 else:
-	print('меньше 0 или больше 9')
+    print('меньше 0 или больше 9')
 
 # альтернативный вариант
 if x == 0 or x == None: # сравнивать через `==` с None не рекомендуется
-	print('пусто')
+    print('пусто')
 elif 0 < x < 10: # да, так можно
-	print('от 1 до 9')
+    print('от 1 до 9')
 else:
-	print('меньше 0 или больше 9')
+    print('меньше 0 или больше 9')
 ```
