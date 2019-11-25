@@ -405,9 +405,9 @@ else:
 python:
 ```python
 with open('log.txt', 'r', encoding='utf-8') as file: # файл сам закроется после with
-	print(file.read())
+    print(file.read())
 
 # альтернативный вариант
 with open('log.txt', 'r', encoding='utf-8-sig') as file:
-	print(file.read())
+    print(file.read())
 ```
