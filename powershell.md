@@ -243,10 +243,10 @@ foreach ($key in $age.Keys) {
 
 powershell:
 ```powershell
-local kate_age = age["Катя"]
-if kate_age then
-    print(kate_age)
-end
+$kate_age = $age["Катя"]
+if ($kate_age) {
+    Write-Host $kate_age
+}
 
 -- альтернативный вариант
 $kate_age = $age["Катя"]
