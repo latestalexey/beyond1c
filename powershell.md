@@ -196,19 +196,19 @@ $age = @{}
 $age["Саша"] = 18
 $age["Маша"] = 19
 
--- альтернативный вариант:
+# альтернативный вариант:
 $age = @{
     "Саша" = 18;
     "Маша" = 19;
 }
 
--- альтернативный вариант:
+# альтернативный вариант:
 $age = @{
     "Саша" = 18
     "Маша" = 19
 }
 
--- альтернативный вариант:
+# альтернативный вариант:
 $age = @{
     Саша = 18
     Маша = 19
@@ -248,7 +248,7 @@ if ($kate_age) {
     Write-Host $kate_age
 }
 
--- альтернативный вариант
+# альтернативный вариант
 $kate_age = $age["Катя"]
 if ($null -ne $kate_age) {
     Write-Host $kate_age
@@ -323,7 +323,7 @@ $employee = @{
 }
 Write-Host employee.name
 
--- альтернативный вариант
+# альтернативный вариант
 $employee = @{}
 $employee.name = "Катя"
 $employee.age = 19
@@ -343,7 +343,7 @@ powershell:
 $employee.gender = "male"
 Write-Host $employee.gender
 
--- альтернативный вариант
+# альтернативный вариант
 $employee["gender"] = "male"
 Write-Host $employee.gender
 ```
